@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "contimove",
+  "version": "${version}",
+  "name": "ContiMove",
+  "description": "Keeps movement inputs active while inventory screens are open.",
+  "authors": [
+    "OpenAI"
+  ],
+  "license": "All Rights Reserved",
+  "environment": "client",
+  "entrypoints": {
+    "main": [
+      "com.icegamer7810.contimove.ContiMove"
+    ],
+    "client": [
+      "com.icegamer7810.contimove.client.ContiMoveClient"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "contimove.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

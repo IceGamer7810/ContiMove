@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.icegamer7810.contimove.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "KeyboardInputMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}
